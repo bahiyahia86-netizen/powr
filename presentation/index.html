@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نظام معلوماتي لتسيير مكتبة كلية العلوم الاجتماعية والإنسانية — عرض المناقشة</title>
+<meta name="description" content="عرض ويب تفاعلي لمذكرة تخرج: تصميم وإنجاز نظام معلوماتي لتسيير مكتبة كلية العلوم الاجتماعية والإنسانية — جامعة الشهيد حمه لخضر بالوادي">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/design.css">
+<link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+<div id="viewport">
+<div id="stage">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" class="arrow"/></marker>
+  <marker id="ahh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" class="arrow hot"/></marker>
+</defs></svg>
+
+<!-- ══════════════════════ 01 · HERO ══════════════════════ -->
+<section class="slide hero" data-section="1" data-title="الغلاف">
+  <div class="photo"></div>
+  <div class="veil"></div>
+  <div class="inner">
+    <div class="content">
+      <div class="inst" data-step="0">
+        <span>الجمهورية الجزائرية الديمقراطية الشعبية · وزارة التكوين والتعليم المهنيين</span>
+        <b>المعهد الوطني المتخصص في التكوين والتعليم المهني — الشهيد عمامرة بشير</b>
+      </div>
+      <div class="kicker" data-step="1"><span class="no">MEMOIRE</span><span>مذكرة تخرج · تقني سامي في إعلام آلي · خيار قاعدة معطيات</span><span class="rule"></span></div>
+      <h1 data-step="2" data-fx="up">تصميم وإنجاز <span class="em">نظام معلوماتي</span> لتسيير مكتبة كلية العلوم الاجتماعية والإنسانية</h1>
+      <div class="univ" data-step="3">جامعة الشهيد حمه لخضر بالوادي</div>
+      <div class="people" data-step="4">
+        <div class="person sup"><span class="av">ق</span><span class="nm"><span class="r">إشراف المؤطرة</span>صبرينة قرزي</span></div>
+        <div class="person"><span class="av">ح</span><span class="nm"><span class="r">المتربصة</span>حمي فطيمة</span></div>
+        <div class="person"><span class="av">ح</span><span class="nm"><span class="r">المتربصة</span>حماني عائشة</span></div>
+        <div class="person"><span class="av">ب</span><span class="nm"><span class="r">المتربصة</span>بلابل فرح</span></div>
+      </div>
+    </div>
+    <div class="batch" data-step="5"><span class="line"></span><span>دفعة مارس 2026</span></div>
+    <svg class="motif" width="230" height="420" viewBox="0 0 230 420" fill="none" data-step="3" aria-hidden="true">
+      <g stroke="#E2B457" stroke-opacity=".55" stroke-width="1.4">
+        <ellipse cx="115" cy="60" rx="86" ry="26"/><ellipse cx="115" cy="106" rx="86" ry="26"/><ellipse cx="115" cy="152" rx="86" ry="26"/>
+        <path d="M29 60v92M201 60v92"/>
+      </g>
+      <g stroke="#79A7FF" stroke-opacity=".5" stroke-width="1.2">
+        <path d="M115 190v52M115 262v52M115 334v44"/>
+        <path d="M96 244l19 18 19-18M96 316l19 18 19-18M96 384l19 14 19-14"/>
+      </g>
+      <circle cx="115" cy="252" r="5" fill="#E2B457"/><circle cx="115" cy="324" r="5" fill="#3E7BFA"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════════════ 02 · CONTEXT ══════════════════════ -->
+<section class="slide" data-section="1" data-title="حقل الدراسة">
+  <div class="inner">
+    <div class="s-head">
+      <div class="kicker" data-step="0"><span class="no">01</span><span>السياق</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">حقل الدراسة: مكتبة كلية العلوم الاجتماعية والإنسانية</h2>
+        <span class="micro" data-step="0">الفصل الأول — الدراسة التمهيدية</span>
+      </div>
+      <p class="lead" data-step="1">مكتبة جامعية تدعم العملية التعليمية والبحث العلمي، وهي <b>جزء من المكتبة المركزية لجامعة الوادي</b> التي تنظّم الموارد وتستقبل الطلبة والأكاديميين داخل حرم الجامعة.</p>
+    </div>
+    <div class="ctx-wrap">
+      <div class="ctx-cards">
+        <div class="card hl-edge" data-step="2"><span class="idx">/ 01</span><span class="tag">IDENTITY</span><h3>الهوية والانتماء</h3><p>مكتبة الكلية ضمن المكتبة المركزية لجامعة الشهيد حمه لخضر بالوادي، تخدم اختصاصات العلوم الاجتماعية والإنسانية.</p></div>
+        <div class="card hl-edge" data-step="3"><span class="idx">/ 02</span><span class="tag">MISSION</span><h3>الرسالة</h3><p>دعم التعليم والبحث العلمي: مصادر معلومات لإعداد الأبحاث والمشاريع العلمية للطلبة وأعضاء الهيئة التدريسية.</p></div>
+        <div class="card hl-edge" data-step="4"><span class="idx">/ 03</span><span class="tag">SERVICES</span><h3>الخدمات</h3><p>تسيير البحث البيبليوغرافي، إرشاد المستفيدين إلى المصادر، ودعم التحصيل العلمي والمهارات البحثية.</p></div>
+        <div class="card hl-edge" data-step="5"><span class="idx">/ 04</span><span class="tag">OPERATION</span><h3>التسيير اليومي</h3><p>إعارة وإرجاع وتسجيل المنخرطين وتنظيم المراجع: عمليات كثيفة يقوم عليها عمل المكتبة يوميًا وموسميًا.</p></div>
+      </div>
+      <div class="ctx-side">
+        <div class="res-panel">
+          <h3 class="sub" data-step="2">الموارد والمقتنيات</h3>
+          <div class="res-row" data-step="3"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5V4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5Z"/><path d="M20 17H6.5a2.5 2.5 0 0 0 0 5"/></svg></span><span class="tx"><b>كتب ومراجع علمية</b><span>رصيد وثائقي مصنّف موضوعًا على الرفوف</span></span></div>
+          <div class="res-row" data-step="4"><span class="ic g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></span><span class="tx"><b>رسائل جامعية</b><span>مذكرات وأبحاث محفوظة في جهة خاصة</span></span></div>
+          <div class="res-row" data-step="5"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.6-4-9s1.5-6.4 4-9Z"/></svg></span><span class="tx"><b>دوريات وأبحاث</b><span>مصادر دورية تخدم تخصصات الكلية</span></span></div>
+          <div class="res-row" data-step="6"><span class="ic g"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M15.5 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="tx"><b>المستفيدون</b><span>الطلبة وأعضاء الهيئة التدريسية — بانخراط سنوي</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 03 · ORG TREE ══════════════════════ -->
+<section class="slide pad-sm" data-section="1" data-title="الهيكل التنظيمي" style="padding:84px 72px 100px">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">01</span><span>السياق</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">موقع المكتبة في الهيكل التنظيمي للكلية</h2>
+        <span class="micro" data-step="0">الشكل (01): الهيكل التنظيمي للمؤسسة</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="cam">
+        <div class="cam-box dia diafix" style="height:700px">
+          <svg viewBox="0 0 1760 700" preserveAspectRatio="none" aria-hidden="true">
+            <g class="wire" data-step="1"><path d="M880 104v46"/></g>
+            <g class="wire" data-step="2"><path d="M880 206v24M560 230h640M560 230v30M1200 230v30"/></g>
+            <g class="wire" data-step="3"><path d="M880 324v46"/></g>
+            <g class="wire" data-step="4"><path d="M880 426v24M205 450h1350M205 450v30M475 450v30M745 450v30M1015 450v30M1285 450v30M1555 450v30"/></g>
+            <g class="wire hot" data-step="5"><path d="M1555 544v40"/><path class="arrow hot" d="M1555 596l-7-12h14Z" stroke="none"/></g>
+          </svg>
+          <div class="tnode root hl-able" data-step="1" data-hl="5" style="left:620px;top:40px;width:520px;height:64px">كلية العلوم الاجتماعية والإنسانية</div>
+          <div class="tnode hl-able" data-step="1" style="left:730px;top:150px;width:300px;height:56px">عميد الكلية</div>
+          <div class="tnode leaf hl-able" data-step="2" style="left:345px;top:260px;width:430px;height:64px">نائب العميد المكلّف بالدراسات والمسائل المرتبطة بالطلبة</div>
+          <div class="tnode leaf hl-able" data-step="2" style="left:985px;top:260px;width:430px;height:64px">نائب العميد المكلّف بما بعد التدرج والبحث العلمي والعلاقات الخارجية</div>
+          <div class="tnode hl-able" data-step="3" style="left:730px;top:370px;width:300px;height:56px">الأمانة العامة</div>
+          <div class="tnode leaf hl-able" data-step="4" style="left:80px;top:480px;width:250px;height:64px">مكتب الأمن الداخلي</div>
+          <div class="tnode leaf hl-able" data-step="4" style="left:350px;top:480px;width:250px;height:64px">مصلحة المستخدمين</div>
+          <div class="tnode leaf hl-able" data-step="4" style="left:620px;top:480px;width:250px;height:64px">مصلحة الميزانية</div>
+          <div class="tnode leaf hl-able" data-step="4" style="left:890px;top:480px;width:250px;height:64px">مصلحة الوسائل والصيانة</div>
+          <div class="tnode leaf hl-able" data-step="4" style="left:1160px;top:480px;width:250px;height:64px">مصلحة التوجيه والبحث البيبليوغرافي</div>
+          <div class="tnode hl-able" data-step="4" data-hl="5" style="left:1430px;top:480px;width:250px;height:64px">مكتبة الكلية</div>
+          <div class="tnode target hl-able" data-step="5" style="left:1420px;top:600px;width:270px;height:56px">حقل الدراسة</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 04 · PROBLEM ══════════════════════ -->
+<section class="slide" data-section="2" data-title="الإشكالية">
+  <div class="inner">
+    <div class="s-head">
+      <div class="kicker" data-step="0"><span class="no">02</span><span>التحليل</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">الإشكالية: تسيير يدوي لا يواكب كثافة العمليات</h2>
+        <span class="micro" data-step="0">طرح الإشكال — المقدمة</span>
+      </div>
+      <p class="lead" data-step="1">كثرة عمليات الإعارة والإرجاع وتسجيل الطلبة وتنظيم المراجع تُظهر أخطاءً ومشاكل <b>تقلّل من مردودية المكتبة</b>:</p>
+    </div>
+    <div class="grid-4 body" style="align-content:start">
+      <div class="card pain" data-step="2" data-morph="pain1">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+        <h3>عمل يدوي بالكامل</h3>
+        <p>التسجيل والإعارة والإرجاع والبحث عن المراجع عمليات صعبة تستغرق وقتًا طويلًا.</p>
+      </div>
+      <div class="card pain" data-step="3">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+        <h3>بطء التنظيم</h3>
+        <p>بطء عملية ترتيب البيانات وتنظيمها داخل السجلات الورقية.</p>
+      </div>
+      <div class="card pain" data-step="4">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></span>
+        <h3>تكدّس الطلبات</h3>
+        <p>صعوبة استخراج المعلومات في الوقت المناسب مع تراكم الطلبات.</p>
+      </div>
+      <div class="card pain" data-step="5">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></span>
+        <h3>تقارير مكلفة الوقت</h3>
+        <p>استغراق وقت كبير في إعداد الإحصائيات والتقارير الدورية.</p>
+      </div>
+    </div>
+    <div class="prob-q" data-step="6" data-morph="question">
+      <span class="q">؟</span>
+      <p>كيف يتم تسيير مكتبة كلية العلوم الاجتماعية والإنسانية في الجامعة بطريقة فعّالة؟</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 05 · CURRENT → PROPOSED ══════════════════════ -->
+<section class="slide" data-section="2" data-title="من الحالي إلى المقترح">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">02</span><span>التحليل</span><span class="rule"></span></div>
+      <h2 class="title" data-step="0" data-fx="up">الحل: من السجل الورقي إلى نظام معلوماتي</h2>
+    </div>
+    <div class="vs body">
+      <div class="side now" data-step="1">
+        <div class="hh"><span class="badge">CURRENT</span><h3>النظام الحالي</h3></div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>سجلات ورقية: سجل الكتب وسجل المذكرات على الرفوف.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>خمس وثائق متداولة: محضر التسليم، استمارة الإعارة، الفاتورة، شهادة العقوبة، وصل الاستلام.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>بطاقة الطالب ضمانًا وحيدًا للإعارة، وبحث يدوي بين الرفوف.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>لا سجل للعقوبات ولا نسخ ثانية تحمي الملفات من الضياع.</li>
+        </ul>
+      </div>
+      <div class="mid" data-step="2">
+        <span class="arw"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="side next" data-step="3">
+        <div class="hh"><span class="badge">PROPOSED</span><h3>النظام المقترح</h3></div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>قاعدة بيانات <b class="mono">My_Data</b> على SQL Server 2017 Express بتسعة جداول مترابطة.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>واجهة تطبيق Delphi 10.4 لإدارة المنخرطين والكتب والإعارة والعقوبات.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>إجراءات مخزنة وقادح (Trigger) داخل قاعدة البيانات.</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>أرشفة واسترجاع للنسخة الاحتياطية، ومراقبة آلية للمدخلات وكلمة مرور.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="chips" style="margin-top:26px" data-step="4">
+      <span class="chip"><span class="dot"></span>دقة المعالجة والحدّ من أخطاء العمل اليدوي</span>
+      <span class="chip"><span class="dot"></span>تخفيف العبء الإداري على موظفي المكتبة</span>
+      <span class="chip"><span class="dot"></span>سرعة الأداء وتقليل الاعتماد على الوثائق الورقية</span>
+      <span class="chip blue"><span class="dot"></span>تخزين واسترجاع كمٍّ هائل من البيانات بكفاءة</span>
+      <span class="chip blue"><span class="dot"></span>أمن وسرية معلومات المراجع والطلبة والموظفين</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 06 · INFO FLOW ══════════════════════ -->
+<section class="slide" data-section="2" data-title="مخطط تدفق المعلومات" style="padding:84px 72px 150px">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">02</span><span>التحليل</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">مخطط تدفق المعلومات داخل حقل الدراسة</h2>
+        <span class="micro" data-step="0">الشكل (02): ستة تدفقات بين أربعة أطراف</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="dia diafix" style="height:600px">
+        <svg viewBox="0 0 1760 600" preserveAspectRatio="none" aria-hidden="true">
+          <g class="wire draw" data-step="1"><path d="M940 330V196" marker-end="url(#ahh)" style="--len:140"/></g>
+          <g class="wire draw" data-step="2"><path d="M820 196v134" marker-end="url(#ah)" style="--len:140"/></g>
+          <g class="wire draw" data-step="3"><path d="M720 352H400" marker-end="url(#ah)" style="--len:330"/></g>
+          <g class="wire draw" data-step="4"><path d="M400 404h320" marker-end="url(#ah)" style="--len:330"/></g>
+          <g class="wire draw" data-step="5"><path d="M1040 352h320" marker-end="url(#ah)" style="--len:330"/></g>
+          <g class="wire draw" data-step="6"><path d="M1360 404h-320" marker-end="url(#ah)" style="--len:330"/></g>
+        </svg>
+        <div class="actor hex" data-step="0" style="left:730px;top:60px;width:300px;height:96px">الطالب</div>
+        <div class="actor core study" data-step="0" style="left:720px;top:330px;width:320px;height:104px">المكتبة</div>
+        <div class="actor ext" data-step="0" style="left:120px;top:336px;width:280px;height:92px">مديرة المكتبة</div>
+        <div class="actor ext" data-step="0" style="left:1360px;top:336px;width:280px;height:92px">عون المكتبة</div>
+        <span class="micro" data-step="0" style="position:absolute;left:0;right:0;top:452px;text-align:center;font-size:17px;color:var(--ink-4)">حقل الدراسة</span>
+        <span class="fnum" data-step="1" data-hl="1" data-hl-until="2" style="left:962px;top:240px">1</span>
+        <span class="fnum" data-step="2" data-hl="2" data-hl-until="3" style="left:776px;top:240px">2</span>
+        <span class="fnum" data-step="3" data-hl="3" data-hl-until="4" style="left:545px;top:318px">3</span>
+        <span class="fnum" data-step="4" data-hl="4" data-hl-until="5" style="left:545px;top:424px">4</span>
+        <span class="fnum" data-step="5" data-hl="5" data-hl-until="6" style="left:1185px;top:318px">5</span>
+        <span class="fnum" data-step="6" data-hl="6" style="left:1185px;top:424px">6</span>
+      </div>
+      <div class="flow-legend">
+        <span class="fl" data-step="1"><span class="n">1</span>تسليم الكتاب المعار</span>
+        <span class="fl" data-step="2"><span class="n">2</span>طلب استعارة كتب + إعطاء بطاقة الطالب</span>
+        <span class="fl" data-step="3"><span class="n">3</span>تقارير إحصائية عن الكتب المستعارة والمستخدمين</span>
+        <span class="fl" data-step="4"><span class="n">4</span>طلبات شراء كتب جديدة</span>
+        <span class="fl" data-step="5"><span class="n">5</span>أوامر العمل اليومية مثل ترتيب الرفوف</span>
+        <span class="fl" data-step="6"><span class="n">6</span>تسجيل الكتب الجديدة</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 07 · STUDY MATERIAL ══════════════════════ -->
+<section class="slide" data-section="2" data-title="مادة الدراسة">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">02</span><span>التحليل</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">ما الذي درسناه في الواقع؟ مناصب، وثائق، سجلات، إجراءات</h2>
+        <span class="micro" data-step="0">دراسة الموجود — الفصل الأول</span>
+      </div>
+    </div>
+    <div class="mat body">
+      <div class="col" data-step="1">
+        <header><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><b>المناصب</b><span class="c">02</span></header>
+        <div class="it"><b>مدير المكتبة</b> — تسيير الرصيد الوثائقي؛ تسجيل الكتب الجديدة، الإشراف على العمال وبنك الإعارة، المصادقة على محضر التسليم وشهادة العقوبة.</div>
+        <div class="it"><b>عون تقني مكتبات جامعية</b> — الإعارة والاستلام، التنظيم والترتيب، الجرد، تسجيل الكتب عند دخولها.</div>
+      </div>
+      <div class="col" data-step="2">
+        <header><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></span><b>الوثائق</b><span class="c">05</span></header>
+        <div class="it">محضر التسليم — استلام الكتب الجديدة</div>
+        <div class="it">استمارة الإعارة — تُسلَّم للطالب عند كل إعارة</div>
+        <div class="it">الفاتورة — شراء الكتب من المورد</div>
+        <div class="it">شهادة العقوبة — إعلام الطالب بالعقوبة</div>
+        <div class="it">وصل الاستلام — إثبات استلام كتب</div>
+      </div>
+      <div class="col" data-step="3">
+        <header><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><b>السجلات</b><span class="c">02</span></header>
+        <div class="it"><b>سجل الكتب</b> — تسجيل الرصيد الموجود: رقم التسجيل، الفاتورة، النشر، النسخ، التصنيف…</div>
+        <div class="it"><b>سجل المذكرات</b> — تسجيل رصيد المذكرات في نهاية السنة: الطالب، المشرف، التصنيف، سنة التخرج.</div>
+      </div>
+      <div class="col" data-step="4">
+        <header><span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><b>الإجراءات</b><span class="c">07</span></header>
+        <div class="it">إعارة كتاب داخلي · إعارة كتاب خارجي</div>
+        <div class="it">إعادة كتاب داخلي · إعادة كتاب خارجي</div>
+        <div class="it">تسليم كتب جديدة</div>
+        <div class="it">الجرد</div>
+        <div class="it">تحرير العقوبة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 08 · CRITIQUE ══════════════════════ -->
+<section class="slide" data-section="2" data-title="النقد والحلول">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">02</span><span>التحليل</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">نقد الموجود والحلول المقترحة</h2>
+        <span class="micro" data-step="0">ثلاثة محاور: تنظيمي · معلوماتي · تقني</span>
+      </div>
+    </div>
+    <div class="grid-3 body" style="align-content:start">
+      <div class="card" data-step="1">
+        <span class="tag">ORGANISATION</span><h3>الجانب التنظيمي</h3>
+        <p style="margin-bottom:12px"><b style="color:#E8908A">النقد:</b> نقص عدد الموظفين والكفاءات والأطر المؤهلة في تكنولوجيا المعلومات، عبء العمل على العمال، وغياب نظام خاص بترتيب سجل المذكرات.</p>
+        <p><b style="color:var(--ok)">الحل:</b> توظيف موظفين وكوادر متخصصة في الإعلام الآلي، ووضع نظام خاص بترتيب سجل المذكرات.</p>
+      </div>
+      <div class="card" data-step="2">
+        <span class="tag">INFORMATION</span><h3>الجانب المعلوماتي</h3>
+        <p style="margin-bottom:12px"><b style="color:#E8908A">النقد:</b> عدم وجود سجلات للعقوبات، وغياب الضمانات الكافية ضد فقدان الملفات.</p>
+        <p><b style="color:var(--ok)">الحل:</b> وضع سجلات للعقوبات، وتوفير أساليب حديثة لضمان نسخ ثانية من الملفات.</p>
+      </div>
+      <div class="card" data-step="3">
+        <span class="tag">TECHNIQUE</span><h3>الجانب التقني</h3>
+        <p style="margin-bottom:12px"><b style="color:#E8908A">النقد:</b> قلة أجهزة الإعلام الآلي الحديثة داخل المكتبة.</p>
+        <p><b style="color:var(--ok)">الحل:</b> توفير أجهزة إعلام آلي حديثة لضمان سير العمل بسهولة.</p>
+      </div>
+    </div>
+    <div class="prob-q" style="margin-top:28px;border-color:rgba(62,123,250,.45);background:linear-gradient(90deg,rgba(62,123,250,.12),rgba(62,123,250,.02))" data-step="4">
+      <span class="q" style="color:var(--blue-soft)">→</span>
+      <p>هذه الحلول لا تكتمل إلا بتجسيد نظام مقترح: نمرّ إلى <span class="accent">الدراسة التفصيلية</span> بمنهجية ميريز.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 09 · MERISE ══════════════════════ -->
+<section class="slide" data-section="3" data-title="منهجية MERISE">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">03</span><span>التصميم</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">منهجية التحليل: MERISE «مريز»</h2>
+        <span class="micro" data-step="0">Méthode pour Rassembler les Idées Sans Effort</span>
+      </div>
+      <p class="lead" data-step="1">ظهرت سنة <b>1977</b> وأُنجزت سنة <b>1979</b> تحت إدارة مركز تقني للإعلام الآلي تابع لوزارة الصناعة الفرنسية؛ تميّزها أنها <b>تفصل بين المعطيات والمعالجات</b> وتعبر النظام بثلاثة نماذج.</p>
+    </div>
+    <div class="merise body">
+      <div class="mtrack">
+        <div class="mstep" data-step="2"><span class="dot">01</span><h3>الدراسة الأولية</h3><p>دراسة الموجود: مناصب العمل، الوثائق، الملفات، السجلات والإجراءات، ثم الدراسة النقدية واقتراح الحلول.</p></div>
+        <div class="mstep" data-step="3"><span class="dot">02</span><h3>الدراسة المفصلة</h3><p>قاموس المعطيات المصفى، قواعد التسيير والتنظيم، ثم النموذج التصوري MCD والنموذج المنطقي MLD.</p></div>
+        <div class="mstep" data-step="4"><span class="dot">03</span><h3>الإنجاز التقني</h3><p>النموذج الفيزيائي MPD: إنشاء القاعدة والجداول بلغة SQL، ثم البرمجة ووحدات الحاسوب.</p></div>
+      </div>
+      <div class="mmodels">
+        <div class="mmodel" data-step="5"><span class="ab">MCD</span><span><b>النموذج التصوري للمعطيات</b><span>كيانات، علاقات، خاصيات، تعدادات</span></span></div>
+        <div class="mmodel" data-step="5"><span class="ab">MLD</span><span><b>النموذج المنطقي للمعطيات</b><span>علاقات ومفاتيح أولية وأجنبية</span></span></div>
+        <div class="mmodel" data-step="5"><span class="ab">MPD</span><span><b>النموذج الفيزيائي للمعطيات</b><span>جداول SQL وأنواع الحقول داخل My_Data</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 10 · SAT ══════════════════════ -->
+<section class="slide" data-section="3" data-title="الارتباط الوظيفي SAT" style="padding:84px 72px 100px">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">03</span><span>التصميم</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">الارتباط الوظيفي SAT: المعرّف يحدد خصائصه</h2>
+        <span class="micro" data-step="0">الشكل (03): مخطط الارتباط الوظيفي</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="cam">
+        <div class="cam-box dia diafix" style="height:720px">
+          <svg viewBox="0 0 1760 720" preserveAspectRatio="none" aria-hidden="true">
+            <g class="wire draw hl-able" data-step="2" data-hl="2" data-hl-until="3"><path d="M965 300C820 210 760 160 700 130" style="--len:340"/><path d="M965 330C760 300 620 260 330 210" style="--len:680"/><path d="M990 300C1150 220 1230 160 1230 120" style="--len:330"/></g>
+            <g class="wire draw hl-able" data-step="3" data-hl="3" data-hl-until="4"><path d="M560 430C620 430 640 420 660 410" style="--len:120"/></g>
+            <g class="wire draw hl-able" data-step="4" data-hl="4" data-hl-until="5"><path d="M315 250C420 300 470 330 500 350" style="--len:230"/></g>
+            <g class="wire draw hl-able" data-step="5" data-hl="5"><path d="M700 520C820 560 900 570 1000 570" style="--len:320"/><path d="M1000 430C1050 480 1080 510 1120 530" style="--len:180"/></g>
+          </svg>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="2" data-hl-until="3" style="left:480px;top:40px;width:250px;height:160px"><span class="id">رقم المؤلف</span><span class="at">اسم المؤلف<br>لقب المؤلف</span></div>
+          <span class="sat-name" data-step="1" style="left:560px;top:210px">المؤلف</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="2" data-hl-until="3" style="left:1120px;top:40px;width:220px;height:120px"><span class="id">رقم الصنف</span><span class="at">تعيين</span></div>
+          <span class="sat-name" data-step="1" style="left:1180px;top:170px">الصنف</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="4" data-hl-until="5" style="left:120px;top:130px;width:240px;height:150px"><span class="id">رقم العقوبة</span><span class="at">تعيين العقوبة<br>تاريخ العقوبة</span></div>
+          <span class="sat-name" data-step="1" style="left:200px;top:290px">العقوبة</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="3" data-hl-until="4" style="left:90px;top:380px;width:200px;height:110px"><span class="id">رقم السنة</span><span class="at">تعيين</span></div>
+          <span class="sat-name" data-step="1" style="left:150px;top:500px">السنة</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="3" data-hl-until="4" style="left:380px;top:330px;width:270px;height:250px"><span class="id">رقم المنخرط</span><span class="at">الاسم المنخرط<br>اللقب المنخرط<br>تاريخ الميلاد<br>مكان الميلاد<br>عنوان</span></div>
+          <span class="sat-name" data-step="1" style="left:470px;top:590px">المنخرط</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="2" data-hl-until="3" style="left:830px;top:240px;width:280px;height:260px"><span class="id">رقم الكتاب</span><span class="at">العنوان الكتاب<br>سنة الإصدار<br>تاريخ الدخول<br>عدد النسخ</span></div>
+          <span class="sat-name" data-step="1" style="left:930px;top:510px">الكتاب</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="2" data-hl-until="3" style="left:1290px;top:180px;width:260px;height:150px"><span class="id">رقم دار النشر</span><span class="at">تعيين دار النشر<br>عنوان دار النشر</span></div>
+          <span class="sat-name" data-step="1" style="left:1370px;top:340px">دار النشر</span>
+          <div class="sat-cluster hl-able" data-step="1" data-hl="5" style="left:1080px;top:470px;width:270px;height:140px"><span class="id">يستعير</span><span class="at">تاريخ الإعارة · تاريخ الإرجاع</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 11 · RULES ══════════════════════ -->
+<section class="slide" data-section="3" data-title="قواعد التسيير والتنظيم">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">03</span><span>التصميم</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">قواعد التسيير والتنظيم التي شكّلت النموذج</h2>
+        <span class="micro" data-step="0">الدراسة التنظيمية — الفصل الثاني</span>
+      </div>
+    </div>
+    <div class="rules body">
+      <div class="list">
+        <div class="rule" data-step="1"><span class="n">R1</span><p>مدة الإعارة لا تتعدّى <b>الأسبوع (07 أيام)</b> ويمكن إرجاع الكتاب قبل انتهاء المدة.</p></div>
+        <div class="rule" data-step="2"><span class="n">R2</span><p>تُسلَّم للمنخرط <b>استمارة إعارة فارغة</b> عند كل إعارة، ويُسجَّل في ملف الإعارة كل ما استعاره المنخرط.</p></div>
+        <div class="rule" data-step="3"><span class="n">R3</span><p>تُعار الكتب <b>لصاحب بطاقة الطالب فقط</b>؛ وطيلة مدة الإعارة يكون الطالب مسؤولًا عن الكتب.</p></div>
+        <div class="rule" data-step="4"><span class="n">R4</span><p>المنخرط الذي <b>ضيّع كتابًا أو أتلفه</b> يُعاقب بإعادة ثمنه <b>05 مرات</b>.</p></div>
+        <div class="rule" data-step="5"><span class="n">R5</span><p>من حق كل طالب جامعي الانخراط، و<b>ينخرط في السنة مرة واحدة ووحيدة</b>؛ ويوجد جدول لتنظيم وقت الإعارة لكل السنوات.</p></div>
+        <div class="rule" data-step="6"><span class="n">R6</span><p>مذكرات التخرج في جهة خاصة، ويُمنح الباحثون ترخيص؛ وكل عرقلة للسير الحسن تؤدي إلى <b>عقوبات حسب درجة خطورتها</b>.</p></div>
+      </div>
+      <div class="card glass" data-step="7" style="display:flex;flex-direction:column;gap:16px;align-self:start">
+        <span class="tag">IMPACT ON MCD</span>
+        <h3 style="margin-top:0">أثر القواعد على التعدادات</h3>
+        <p><b class="accent">يستعير</b> — منخرط أو أكثر × كتاب أو أكثر: تعداد <span class="mono">(0,N)/(0,N)</span> مع تاريخي الإعارة والإرجاع.</p>
+        <p><b class="accent">ينخرط</b> — مرة واحدة ووحيدة في السنة: <span class="mono">(1,1)/(1,N)</span> بين المنخرط والسنة.</p>
+        <p><b class="accent">يعاقب</b> — عقوبة لمنخرط واحد ووحيد: <span class="mono">(1,1)/(0,N)</span> بين العقوبة والمنخرط.</p>
+        <p><b class="accent">يؤلف / تنشر / ينتمي</b> — مؤلف واحد ووحيد، دار نشر واحدة، صنف واحد: <span class="mono">(1,1)/(1,N)</span>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 12 · MCD ══════════════════════ -->
+<section class="slide" data-section="3" data-title="النموذج التصوري MCD" style="padding:70px 60px 84px">
+  <div class="inner">
+    <div class="s-head compact" style="margin-bottom:8px">
+      <div class="kicker" data-step="0"><span class="no">03</span><span>التصميم</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">MCD: سبع كيانات وست علاقات</h2>
+        <span class="micro" data-step="0">الشكل (04) — الكاميرا تتنقل بين الكيانات</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="cam" data-focus="1-3" data-cam='[{"at":0,"x":0,"y":0,"k":1},{"at":1,"x":-1215,"y":134,"k":1.8},{"at":2,"x":-504,"y":-631,"k":1.8},{"at":3,"x":-630,"y":-208,"k":2},{"at":4,"x":0,"y":0,"k":1.04},{"at":5,"x":0,"y":0,"k":1}]'>
+        <div class="cam-box dia diafix" style="height:830px">
+          <svg viewBox="0 0 1760 830" preserveAspectRatio="none" aria-hidden="true">
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M300 92h300"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M750 95h280"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M1080 268 852 300"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M748 400v70"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M1280 118h170"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M1515 210v90"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M880 520h180"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M1125 546v94"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M640 512H470"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M350 502h-60"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M742 700l-78 44"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M600 772H370"/></g>
+          </svg>
+
+          <div class="ent hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:70px;top:50px;width:230px"><header>العقوبة</header><ul><li class="key">رقم العقوبة</li><li>تعيين العقوبة</li><li>تاريخ العقوبة</li></ul></div>
+          <div class="rel hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:600px;top:60px;width:150px;height:72px">يعاقب</div>
+          <span class="clbl hot" data-step="0" style="left:330px;top:64px">(1,1)</span>
+          <span class="clbl hot" data-step="0" style="left:880px;top:64px">(0,N)</span>
+
+          <div class="ent hl-able" data-step="0" data-hl="1" data-hl-until="2" data-morph="student" style="left:1030px;top:40px;width:250px"><header>المنخرط</header><ul><li class="key">رقم المنخرط</li><li>الاسم المنخرط</li><li>لقب المنخرط</li><li>تاريخ الميلاد</li><li>مكان الميلاد</li><li>العنوان</li></ul></div>
+          <div class="rel hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:1450px;top:140px;width:130px;height:70px">ينخرط</div>
+          <span class="clbl hot" data-step="0" style="left:1300px;top:92px">(1,1)</span>
+          <span class="clbl hot" data-step="0" style="left:1530px;top:240px">(1,N)</span>
+          <div class="ent hl-able" data-step="0" style="left:1420px;top:300px;width:190px"><header>سنة</header><ul><li class="key">رقم السنة</li><li>تعيين</li></ul></div>
+
+          <div class="rel with-props hl-able" data-step="0" data-hl="3" data-hl-until="4" data-morph="iara" style="left:640px;top:230px;width:210px;height:170px"><span><span class="rn">يستعير</span><br><span class="rp">تاريخ الإعارة</span><br><span class="rp">تاريخ الإرجاع</span></span></div>
+          <span class="clbl hot" data-step="0" style="left:880px;top:262px">(0,N)</span>
+          <span class="clbl hot" data-step="0" style="left:760px;top:418px">(0,N)</span>
+
+          <div class="ent hl-able" data-step="0" data-hl="2" data-hl-until="3" data-morph="book" style="left:640px;top:470px;width:240px"><header>كتاب</header><ul><li class="key">رقم الكتاب</li><li>العنوان الكتاب</li><li>سنة الاصدار</li><li>تاريخ دخول</li><li>عدد النسخ</li></ul></div>
+          <div class="rel hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:1060px;top:480px;width:130px;height:66px">ينتمي</div>
+          <span class="clbl hot" data-step="0" style="left:905px;top:486px">(1,1)</span>
+          <span class="clbl hot" data-step="0" style="left:1140px;top:570px">(1,N)</span>
+          <div class="ent hl-able" data-step="0" style="left:1080px;top:640px;width:190px"><header>الصنف</header><ul><li class="key">رقم الصنف</li><li>تعيين</li></ul></div>
+
+          <div class="rel hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:350px;top:470px;width:120px;height:64px">ينشر</div>
+          <span class="clbl hot" data-step="0" style="left:500px;top:452px">(1,1)</span>
+          <span class="clbl hot" data-step="0" style="left:300px;top:440px">(1,N)</span>
+          <div class="ent hl-able" data-step="0" style="left:70px;top:360px;width:220px"><header>دار النشر</header><ul><li class="key">رقم دار النشر</li><li>تعيين</li><li>عنوان دار النشر</li></ul></div>
+
+          <div class="rel hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:600px;top:740px;width:130px;height:64px">يؤلف</div>
+          <span class="clbl hot" data-step="0" style="left:700px;top:700px">(1,1)</span>
+          <span class="clbl hot" data-step="0" style="left:480px;top:742px">(1,N)</span>
+          <div class="ent hl-able" data-step="0" style="left:150px;top:660px;width:220px"><header>المؤلف</header><ul><li class="key">رقم المؤلف</li><li>اسم المؤلف</li><li>لقب المؤلف</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 13 · MLD ══════════════════════ -->
+<section class="slide" data-section="3" data-title="النموذج المنطقي MLD" style="padding:80px 60px 96px">
+  <div class="inner">
+    <div class="s-head compact" style="margin-bottom:14px">
+      <div class="kicker" data-step="0"><span class="no">03</span><span>التصميم</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">MLD: من الكيانات إلى العلاقات المنطقية</h2>
+        <span class="micro" data-step="0">قاعدة 1 (أب-ابن) تختفي العلاقة · قاعدة 2 (أب-أب) تصبح علاقة مستقلة</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="mld-grid dia">
+        <div class="mrel hl-able" data-step="1" data-morph="book" style="left:80px;top:20px;width:470px">
+          <h4>الكتاب <span class="k">RELATION</span></h4>
+          <div class="fields"><span class="f pk">رقم الكتاب</span><span class="f">العنوان</span><span class="f">سنة الإصدار</span><span class="f">تاريخ الدخول</span><span class="f">عدد النسخ</span><span class="f fk"># رقم الصنف</span><span class="f fk"># رقم المؤلف</span><span class="f fk"># رقم دار النشر</span></div>
+        </div>
+        <div class="mrel hl-able" data-step="2" data-morph="student" style="left:80px;top:250px;width:470px">
+          <h4>الطالب <span class="k">RELATION</span></h4>
+          <div class="fields"><span class="f pk">رقم الطالب</span><span class="f">اسم الطالب</span><span class="f">لقب الطالب</span><span class="f">العنوان</span><span class="f">تاريخ الميلاد</span><span class="f">مكان الميلاد</span><span class="f fk"># رقم السنة</span></div>
+        </div>
+        <div class="mrel junction hl-able" data-step="3" data-morph="iara" style="left:620px;top:120px;width:400px">
+          <h4>يستعير <span class="k">JUNCTION · قاعدة 2</span></h4>
+          <div class="fields"><span class="f fk"># رقم الطالب</span><span class="f fk"># رقم الكتاب</span><span class="f">تاريخ الإعارة</span><span class="f">تاريخ الإرجاع</span></div>
+        </div>
+        <div class="mrel hl-able" data-step="4" style="left:620px;top:330px;width:400px">
+          <h4>العقوبة <span class="k">RELATION</span></h4>
+          <div class="fields"><span class="f pk">رقم العقوبة</span><span class="f">تعيين العقوبة</span><span class="f">تاريخ العقوبة</span><span class="f fk"># رقم الطالب</span></div>
+        </div>
+        <div class="mrel hl-able" data-step="1" style="left:1120px;top:20px;width:300px"><h4>الصنف</h4><div class="fields"><span class="f pk">رقم الصنف</span><span class="f">تعيين</span></div></div>
+        <div class="mrel hl-able" data-step="1" style="left:1120px;top:160px;width:300px"><h4>دار النشر</h4><div class="fields"><span class="f pk">رقم دار النشر</span><span class="f">تعيين</span><span class="f">عنوان دار النشر</span></div></div>
+        <div class="mrel hl-able" data-step="1" style="left:1120px;top:330px;width:300px"><h4>المؤلف</h4><div class="fields"><span class="f pk">رقم المؤلف</span><span class="f">اسم المؤلف</span><span class="f">لقب المؤلف</span></div></div>
+        <div class="mrel hl-able" data-step="2" style="left:1120px;top:490px;width:300px"><h4>السنة</h4><div class="fields"><span class="f pk">رقم السنة</span><span class="f">تعيين</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 14 · MPD ══════════════════════ -->
+<section class="slide" data-section="4" data-title="النموذج الفيزيائي MPD">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">04</span><span>قاعدة البيانات</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">MPD: التجسيد الفيزيائي داخل <span class="mono" style="color:var(--brass)">My_Data</span></h2>
+        <span class="micro" data-step="0">SQL Server 2017 Express · تسعة جداول</span>
+      </div>
+    </div>
+    <div class="mpd body">
+      <div style="display:flex;flex-direction:column;gap:18px;min-height:0">
+        <div class="code" data-step="1"><span class="kw">CREATE DATABASE</span> <span class="tb">My_Data</span>
+<span class="kw">ON</span> ( NAME = <span class="tb">My_Data</span>,
+     FILENAME = <span class="str">'C:\Program Files\Microsoft SQL Server\MSSQL\Data\My_Data.mdf'</span>,
+     SIZE = 10MB, MAXSIZE = 100MB, FILEGROWTH = 5MB )
+<span class="kw">LOG ON</span> ( NAME = My_Data_Log,
+     FILENAME = <span class="str">'C:\Program Files\Microsoft SQL Server\MSSQL\Data\SchoolDB.ldf'</span>,
+     SIZE = 5MB, MAXSIZE = 50MB, FILEGROWTH = 5MB );</div>
+        <div class="code" data-step="2" data-morph="tblbook"><span class="kw">USE</span> [My_Data] <span class="kw">GO</span>
+<span class="kw">CREATE TABLE</span> [dbo].[<span class="tb">TBL_BOOK</span>] (
+  [BookID]        [<span class="fn">int</span>] <span class="kw">NOT NULL</span>,
+  [BookTitle]     [<span class="fn">nvarchar</span>](50) <span class="kw">NOT NULL</span>,
+  [BookDatePrint] [<span class="fn">date</span>] <span class="kw">NOT NULL</span>,
+  [BookDateEnter] [<span class="fn">date</span>] <span class="kw">NOT NULL</span>,
+  [BookNumberCopy][<span class="fn">int</span>] <span class="kw">NOT NULL</span>,
+  [ID_Sinfe],[ID_MOALF],[DAR_ID] [<span class="fn">int</span>] <span class="kw">NOT NULL</span>,
+  <span class="kw">CONSTRAINT</span> TBL_BOOK_PK <span class="kw">PRIMARY KEY</span> (BookID),
+  <span class="kw">CONSTRAINT</span> TBL_BOOK_fK_S <span class="kw">FOREIGN KEY</span>(ID_Sinfe)
+     <span class="kw">REFERENCES</span> TBL_SINFE(ID_Sinfe) <span class="kw">ON UPDATE CASCADE</span> );</div>
+      </div>
+      <div class="types" style="justify-content:center">
+        <h3 class="sub" data-step="3">من الخاصية إلى نوع الحقل — ملف «كتاب»</h3>
+        <div class="trow hd" data-step="3"><span>الخاصية</span><span>النوع</span><span>الطول</span></div>
+        <div class="trow" data-step="4"><span class="a">رقم الكتاب (مفتاح الملف)</span><span class="t">int</span><span class="l">05</span></div>
+        <div class="trow" data-step="4"><span class="a">العنوان</span><span class="t">nvarchar</span><span class="l">50</span></div>
+        <div class="trow" data-step="5"><span class="a">تاريخ الطباعة / تاريخ دخول الكتاب</span><span class="t">date</span><span class="l">10</span></div>
+        <div class="trow" data-step="5"><span class="a">عدد النسخ</span><span class="t">int</span><span class="l">03</span></div>
+        <div class="trow" data-step="6"><span class="a">رقم الصنف · رقم المؤلف · رقم دار النشر (مفاتيح ثانوية)</span><span class="t">int</span><span class="l">05</span></div>
+        <div class="chips" data-step="7" style="margin-top:10px">
+          <span class="chip blue"><span class="dot"></span>طريقة الوصول: مباشر · الحامل: القرص الصلب</span>
+          <span class="chip"><span class="dot"></span>طول تسجيل ملف الكتاب: 93</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 15 · DB SCHEMA ══════════════════════ -->
+<section class="slide" data-section="4" data-title="مخطط قاعدة البيانات النهائية" style="padding:70px 60px 84px">
+  <div class="inner">
+    <div class="s-head compact" style="margin-bottom:8px">
+      <div class="kicker" data-step="0"><span class="no">04</span><span>قاعدة البيانات</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">المخطط النهائي: تسعة جداول ومفاتيحها</h2>
+        <span class="micro" data-step="0">الشكل (05) — كاميرا داخل قاعدة البيانات</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="cam" data-focus="1-6" data-cam='[{"at":0,"x":0,"y":0,"k":1},{"at":1,"x":-1618,"y":-671,"k":1.9},{"at":2,"x":-1618,"y":-671,"k":1.9},{"at":3,"x":416,"y":90,"k":1.9},{"at":4,"x":359,"y":-528,"k":1.9},{"at":5,"x":225,"y":-892,"k":1.8},{"at":6,"x":-1476,"y":233,"k":1.8},{"at":7,"x":0,"y":0,"k":1}]'>
+        <div class="cam-box dia diafix" style="height:810px">
+          <svg viewBox="0 0 1760 810" preserveAspectRatio="none" aria-hidden="true">
+            <g class="wire hl-able" data-hl="3" data-hl-until="4"><path d="M360 110h280v-30"/></g>
+            <g class="wire hl-able" data-hl="3" data-hl-until="4"><path d="M360 190h80v140h40"/></g>
+            <g class="wire hl-able" data-hl="3" data-hl-until="4"><path d="M360 240h760v70"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M265 420V290"/></g>
+            <g class="wire hl-able" data-hl="4" data-hl-until="5"><path d="M380 500h760v75h40"/></g>
+            <g class="wire hl-able" data-hl="2" data-hl-until="3"><path d="M940 460h300v20"/></g>
+            <g class="wire hl-able" data-hl="5" data-hl-until="6"><path d="M470 730h760v-60"/></g>
+          </svg>
+          <div class="tbl hl-able" data-step="0" data-hl="3" data-hl-until="4" data-morph="tblbook" style="left:110px;top:60px;width:250px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_BOOK</header><ul>
+            <li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>BookID</li>
+            <li class="fld">BookTitle</li><li class="fld">BookDatePrint</li><li class="fld">BookDateEnter</li><li class="fld">BookNumberCopy</li>
+            <li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>ID_Sinfe</li>
+            <li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>ID_MOALF</li>
+            <li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>DAR_ID</li></ul></div>
+          <div class="tbl hl-able" data-step="0" style="left:640px;top:40px;width:240px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_MOALF</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>ID_MOALF</li><li class="fld">Full_Name_Moalf</li><li class="fld">Info_Moalf</li></ul></div>
+          <div class="tbl hl-able" data-step="0" data-hl="6" data-hl-until="7" style="left:1180px;top:40px;width:240px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_LOGIN</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>ID</li><li class="fld">Sys_UserName</li><li class="fld">Sys_User_Password</li><li class="fld">Sys_User_Type</li></ul></div>
+          <div class="tbl hl-able" data-step="0" style="left:480px;top:290px;width:210px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_SINFE</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>ID_Sinfe</li><li class="fld">Sinfe_Name</li></ul></div>
+          <div class="tbl hl-able" data-step="0" style="left:1120px;top:260px;width:240px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_DAR_NACHER</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>DAR_ID</li><li class="fld">DAR_NAME</li><li class="fld">DAR_ADRESS</li></ul></div>
+          <div class="tbl hl-able" data-step="0" data-hl="2" data-hl-until="3" style="left:700px;top:420px;width:240px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_ANNE_INKRAT</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>AnneIkratId</li><li class="fld">AnneInkirat</li></ul></div>
+          <div class="tbl hl-able" data-step="0" data-hl="4" data-hl-until="5" style="left:150px;top:420px;width:230px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_IARA</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>IaraID</li><li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>NumStudent</li><li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>BookID</li><li class="fld">DateIara</li><li class="fld">DateIrja</li></ul></div>
+          <div class="tbl hl-able" data-step="0" data-hl="1" data-hl-until="3" style="left:1180px;top:480px;width:250px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_STUDENT</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>NumStudent</li><li class="fld">NomEtPrenom</li><li class="fld">Date_N</li><li class="fld">LuieN</li><li class="fld">Adress_Student</li><li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>AnneIkratId</li></ul></div>
+          <div class="tbl hl-able" data-step="0" data-hl="5" data-hl-until="6" style="left:240px;top:660px;width:230px"><header><svg width="11" height="11" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>TBL_OKOBA</header><ul><li class="pk"><svg class="ic" viewBox="0 0 24 24" fill="#F2D191"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg>OkobaID</li><li class="fld">DateOkoba</li><li class="fk"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#8FB6FF" stroke-width="2.4"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>NumStudent</li><li class="fld">OkobaDesc</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 16 · ARCHITECTURE ══════════════════════ -->
+<section class="slide" data-section="5" data-title="المعمارية والتقنيات">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">05</span><span>الإنجاز</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">الدراسة التقنية: Delphi في الوجه، SQL Server في العمق</h2>
+        <span class="micro" data-step="0">الفصل الثالث — الوسائل المستعملة</span>
+      </div>
+    </div>
+    <div class="arch body">
+      <div class="tech-cards">
+        <div class="tech" data-step="1">
+          <div class="lg">Delphi 10.4 <small>RAD Studio — Embarcadero · واجهة VCL لتطبيقات Windows</small></div>
+          <ul><li>بيئة تطوير واحدة لمنصات متعددة بكود واحد، ومكتبة غنية بالمكونات.</li><li>تحسينات برمجية وإدارة مذاكرة موحّدة وأدوات IDE محسنة.</li></ul>
+        </div>
+        <div class="tech db" data-step="2">
+          <div class="lg">SQL Server 2017 Express <small>Microsoft · نظام إدارة قواعد بيانات مجاني للتطبيقات الصغيرة</small></div>
+          <ul><li>واجهة رسومية وأدوات غنية لإدارة قواعد البيانات ودعم أحدث وظائف SQL.</li><li>أداء عالي، أمان متكامل، ودعم Windows وLinux وDocker.</li></ul>
+        </div>
+        <div class="chips" data-step="5">
+          <span class="chip"><span class="dot"></span>إجراءات مخزنة: AddMoalf · UpdateMoalf · DeleteMoalf</span>
+          <span class="chip blue"><span class="dot"></span>قادح Trigger داخل SQL Server</span>
+        </div>
+      </div>
+      <div class="arch-diagram" data-step="3" style="position:relative">
+        <span class="vconn" data-step="4" style="top:190px;height:70px"></span>
+        <span class="vconn" data-step="4" style="top:380px;height:70px"></span>
+        <div class="layer" data-step="3" style="top:70px;height:120px"><span class="lt">واجهة التطبيق</span><span class="items"><span class="it">تسجيل الدخول</span><span class="it">إدارة المنخرطين</span><span class="it">إدارة الكتب</span><span class="it">الإعارة والاسترجاع</span><span class="it">المستخدمون</span><span class="it">الإعدادات</span></span></div>
+        <div class="layer" data-step="4" style="top:260px;height:120px"><span class="lt">طبقة الوصول</span><span class="items"><span class="it mono">ADOQuery1</span><span class="it mono">Conn</span><span class="it mono">Stored Procedures</span><span class="it mono">Trigger</span><span class="it">مراقبة المدخلات</span></span></div>
+        <div class="layer srv" data-step="5" style="top:450px;height:130px"><span class="lt">SQL Server · My_Data</span><span class="items"><span class="it mono">TBL_STUDENT</span><span class="it mono">TBL_BOOK</span><span class="it mono">TBL_IARA</span><span class="it mono">TBL_OKOBA</span><span class="it mono">TBL_LOGIN</span><span class="it mono">+4</span><span class="it mono">C:\Backup\My_Data.bak</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 17 · SECURITY ══════════════════════ -->
+<section class="slide" data-section="5" data-title="الأمن والأرشفة">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">05</span><span>الإنجاز</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">الأمن والحماية والأرشفة والاسترجاع</h2>
+        <span class="micro" data-step="0">ثلاث طبقات حماية + مسار نسخ احتياطي موثّق</span>
+      </div>
+    </div>
+    <div class="sec body">
+      <div class="sec-layers">
+        <div class="secl" data-step="1"><h4><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></span>العتاد</h4><ul><li>الاستغلال السليم لمكونات الحاسوب.</li><li>تحديد مستعملي الحاسوب باكتساب المستعمل خبرة كافية لتشغيله.</li></ul></div>
+        <div class="secl" data-step="2"><h4><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>البرامج</h4><ul><li>كلمة مرور للدخول إلى البرنامج.</li><li>حفظ المعلومات في أكثر من حامل، وبرنامج مضاد للفيروسات.</li><li>مغذٍّ كهربائي لحماية الجهاز من انقطاع التيار.</li></ul></div>
+        <div class="secl" data-step="3"><h4><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>المراقبة</h4><ul><li>لا إدخال سلسلة حرفية في حقل عددي، ولا معرف فارغ أو مكرر، ولا تاريخ خاطئ — التنبيه آلي.</li><li>لا استعمال للبرنامج إلا للمرخّص لهم، وكلمة السر لا تُغيَّر إلا بعد إدخال الأصلية.</li></ul></div>
+      </div>
+      <div class="backup-flow">
+        <h3 class="sub" data-step="4">مسار الأرشفة والاسترجاع (Delphi → SQL)</h3>
+        <div class="bstep" data-step="5"><span class="n">01</span><p>نسخ احتياطي: <span class="mono">BACKUP DATABASE [My_Data] TO DISK = 'C:\Backup\My_Data.bak' WITH FORMAT, NAME = 'Full Backup'</span></p></div>
+        <div class="bstep" data-step="6"><span class="n">02</span><p>تأكيد للمستخدم: «تم إنشاء النسخة الاحتياطية بنجاح».</p></div>
+        <div class="bstep" data-step="7"><span class="n">03</span><p>قبل الاسترجاع: غلق الاتصال ثم <span class="mono">ALTER DATABASE [My_Data] SET SINGLE_USER WITH ROLLBACK IMMEDIATE</span></p></div>
+        <div class="bstep" data-step="8"><span class="n">04</span><p>استرجاع: <span class="mono">RESTORE DATABASE [My_Data] FROM DISK = … WITH REPLACE</span> ثم <span class="mono">SET MULTI_USER</span> وإعادة الاتصال.</p></div>
+        <div class="bstep" data-step="9"><span class="n">05</span><p>تأكيد: «تم استرجاع النسخة الاحتياطية بنجاح» — والإجراء نفسه متاح من واجهة SQL Server بثلاث خطوات.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 18 · SHOWCASE ══════════════════════ -->
+<section class="slide" data-section="5" data-title="واجهات البرنامج" style="padding:80px 60px 96px">
+  <div class="inner">
+    <div class="s-head compact" style="margin-bottom:6px">
+      <div class="kicker" data-step="0"><span class="no">05</span><span>الإنجاز</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">البرنامج المنجز: الشاشة الرئيسية وتسجيل الدخول</h2>
+        <span class="micro" data-step="0">صور أصلية من شاشة البرنامج — الشكلان المرفقان بالفصل الثالث</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="cam show" data-cam='[{"at":0,"x":0,"y":0,"k":1},{"at":3,"x":130,"y":-551,"k":1.75},{"at":4,"x":-112,"y":-1064,"k":2.3}]'>
+        <div class="cam-box">
+          <div class="win main" data-step="1">
+            <div class="bar"><i></i><i></i><i></i><span>FrmMain — الرئيسية</span></div>
+            <img src="assets/app_main.png" alt="الشاشة الرئيسية للبرنامج">
+          </div>
+          <span class="pin" data-step="2" style="top:88px;left:1000px"><b>A</b>شريط الوظائف: ملف · المنخرطين · الكتب · الإعارة والاسترجاع · المستخدمون · الإعدادات</span>
+          <span class="pin" data-step="2" style="top:200px;left:1560px"><b>B</b>المستخدم الحالي</span>
+          <span class="pin" data-step="2" style="top:712px;left:740px"><b>C</b>شريط الحالة: المستخدم · الوقت · التاريخ</span>
+          <div class="win login" data-step="3">
+            <div class="bar"><i></i><i></i><i></i><span>FrmLogin — تسجيل الدخول</span></div>
+            <img src="assets/app_login.png" alt="نافذة تسجيل الدخول">
+          </div>
+          <span class="pin" data-step="5" style="top:560px;left:430px"><b>1</b>إسم المستخدم</span>
+          <span class="pin" data-step="5" style="top:560px;left:140px"><b>2</b>كلمة المرور</span>
+          <span class="pin" data-step="5" style="top:676px;left:430px"><b>3</b>عرض كلمة المرور</span>
+          <span class="pin" data-step="5" style="top:676px;left:140px"><b>4</b>تسجيل الدخول / إلغاء</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 19 · OPS TREE ══════════════════════ -->
+<section class="slide" data-section="5" data-title="عمليات الواجهة" style="padding:80px 60px 96px">
+  <div class="inner">
+    <div class="s-head compact" style="margin-bottom:10px">
+      <div class="kicker" data-step="0"><span class="no">05</span><span>الإنجاز</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">شجرة عمليات الواجهة بعد تسجيل الدخول</h2>
+        <span class="micro" data-step="0">الشكل (06): المخطط الانسيابي لتسيير عمليات الواجهة</span>
+      </div>
+    </div>
+    <div class="body" style="position:relative">
+      <div class="dia ops diafix" style="height:620px">
+        <svg viewBox="0 0 1760 620" preserveAspectRatio="none" aria-hidden="true">
+          <g class="wire draw" data-step="1"><path d="M880 96v40M1620 136H220M220 136v34M500 136v34M780 136v34M1060 136v34M1340 136v34M1620 136v34" style="--len:2200"/></g>
+          <g class="wire draw" data-step="2"><path d="M1620 236v40" style="--len:60"/></g>
+          <g class="wire draw" data-step="3"><path d="M1340 236v40" style="--len:60"/></g>
+          <g class="wire draw" data-step="4"><path d="M1060 236v40M1060 326v40M1060 416v40" style="--len:180"/></g>
+          <g class="wire draw" data-step="5"><path d="M780 236v40M780 326v40" style="--len:120"/></g>
+          <g class="wire draw" data-step="6"><path d="M500 236v40" style="--len:60"/></g>
+          <g class="wire draw" data-step="7"><path d="M220 236v40M220 326v40M220 416v40" style="--len:180"/></g>
+        </svg>
+        <div class="tnode root" data-step="1" style="left:760px;top:40px;width:240px;height:56px">تسجيل الدخول</div>
+        <div class="op-col" data-step="2" style="left:1500px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">ملف</span><span class="tnode leaf" style="position:static;width:100%">تسجيل الخروج</span></div>
+        <div class="op-col" data-step="3" style="left:1220px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">إدارة المنخرطين</span><span class="tnode leaf" style="position:static;width:100%">سنة الانخراط</span></div>
+        <div class="op-col" data-step="4" style="left:940px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">إدارة الكتب</span><span class="tnode leaf" style="position:static;width:100%">إدارة الأصناف</span><span class="tnode leaf" style="position:static;width:100%">إدارة المؤلف</span><span class="tnode leaf" style="position:static;width:100%">إدارة دور النشر</span></div>
+        <div class="op-col" data-step="5" style="left:660px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">الإعارة والاسترجاع</span><span class="tnode leaf" style="position:static;width:100%">الإعارة</span><span class="tnode leaf" style="position:static;width:100%">العقوبة</span></div>
+        <div class="op-col" data-step="6" style="left:380px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">المستخدمين</span><span class="tnode leaf" style="position:static;width:100%">إدارة المستخدمين</span></div>
+        <div class="op-col" data-step="7" style="left:100px;top:170px;width:240px"><span class="tnode leaf" style="position:static;width:100%">الإعدادات</span><span class="tnode leaf" style="position:static;width:100%">الأرشفة والإرجاع</span><span class="tnode leaf" style="position:static;width:100%">تغيير خلفية البرنامج</span><span class="tnode leaf" style="position:static;width:100%">تغيير كلمة المرور</span></div>
+      </div>
+      <div class="chips" style="position:absolute;bottom:6px;left:0;right:0;justify-content:center" data-step="8">
+        <span class="chip"><span class="dot"></span>سيناريو الإعارة (إجراء 01): استمارة إعارة محررة و1م</span>
+        <span class="chip"><span class="dot"></span>البحث عن الكتاب ع1</span>
+        <span class="chip"><span class="dot"></span>تدوين الكتاب المعار وتسليمه وطلب بطاقة الطالب ع2</span>
+        <span class="chip blue"><span class="dot"></span>عند الإرجاع (إجراء 03): تدوين الإعادة وإرجاع البطاقة</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 20 · CONCLUSION ══════════════════════ -->
+<section class="slide" data-section="6" data-title="المخرجات والخاتمة">
+  <div class="inner">
+    <div class="s-head compact">
+      <div class="kicker" data-step="0"><span class="no">06</span><span>الخاتمة</span><span class="rule"></span></div>
+      <div class="row">
+        <h2 class="title" data-step="0" data-fx="up">ما الذي أُنجز، وما الأثر المستهدف؟</h2>
+        <span class="micro" data-step="0">الخاتمة — الفصل الثالث</span>
+      </div>
+    </div>
+    <div class="concl body">
+      <div>
+        <h3 class="sub" data-step="1" style="margin-bottom:16px"><span class="accent">●</span> المنجز فعليًا</h3>
+        <div class="out-list">
+          <div class="out" data-step="1"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>قاعدة بيانات My_Data</b><p>تسعة جداول بمفاتيح أولية وأجنبية وعلاقات UPDATE CASCADE على SQL Server 2017 Express.</p></span></div>
+          <div class="out" data-step="2"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>واجهة تطبيق Delphi 10.4</b><p>ست وحدات: ملف، إدارة المنخرطين، إدارة الكتب، الإعارة والاسترجاع، المستخدمون، الإعدادات.</p></span></div>
+          <div class="out" data-step="3"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>منطق داخل القاعدة</b><p>إجراءات مخزنة لإضافة/تعديل/حذف المؤلف، وقادح (Trigger)، ومراقبة آلية للمدخلات.</p></span></div>
+          <div class="out" data-step="4"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>أرشفة واسترجاع</b><p>نسخة احتياطية كاملة تُنشأ وتُسترجع من الواجهة ومن SQL Server.</p></span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub" data-step="5" style="margin-bottom:16px"><span class="blue">◌</span> الأثر المستهدف</h3>
+        <div class="out-list">
+          <div class="out target" data-step="5"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg></span><span><b>السرعة والدقة</b><p>تخفيف الضغط وتحسين ظروف العمل والرفع من كفاءة الأداء، وتوفير الوقت والجهد.</p></span></div>
+          <div class="out target" data-step="6"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M18 6 6 18M6 6l12 12"/></svg></span><span><b>تقليل الورق والأخطاء</b><p>الحد من الأخطاء الناتجة عن العمل اليدوي وتقليل الاعتماد على الوثائق الورقية.</p></span></div>
+          <div class="out target" data-step="7"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span><span><b>أمن وسرية المعلومات</b><p>حماية معطيات المراجع والطلبة والموظفين بكلمة مرور ونسخ احتياطية.</p></span></div>
+        </div>
+        <div class="thanks" data-step="8">
+          <div>
+            <h3>شكرًا على حسن الإصغاء</h3>
+            <p>نتقدم بالشكر لمؤطرتنا الأستاذة صبرينة قرزي ولكل أساتذة المعهد — ونصغي الآن لأسئلة اللجنة وملاحظاتها.</p>
+          </div>
+          <span class="q">؟</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ HUD ══════════════════════ -->
+<div class="progress"><i></i></div>
+<div class="hud">
+  <div class="top">
+    <div class="brand"><span class="mark"></span><span class="t"><b>POWR</b> · نظام تسيير مكتبة كلية العلوم الاجتماعية والإنسانية</span></div>
+    <div class="sec-now"></div>
+  </div>
+  <nav class="sects" id="sects"></nav>
+  <div class="counter"><span class="cur">01</span><span class="sep"></span><span class="tot">20</span></div>
+  <div class="navbtns">
+    <button id="pv" title="السابق (→)" aria-label="السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <button id="nx" title="التالي (← أو مسافة)" aria-label="التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+    <button id="ov-btn" title="فهرس الشرائح (O)" aria-label="فهرس الشرائح"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button>
+    <button id="notes-btn" title="ملاحظات المقدّم (N)" aria-label="ملاحظات المقدّم"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></button>
+  </div>
+  <div class="hint"><kbd>←</kbd><kbd>Space</kbd> التالي · <kbd>→</kbd> السابق · <kbd>O</kbd> فهرس · <kbd>N</kbd> ملاحظات المقدّم · <kbd>F</kbd> ملء الشاشة · <kbd>H</kbd> مساعدة</div>
+</div>
+
+<div id="notes"></div>
+
+<div id="overview">
+  <div class="oh"><h3>فهرس الشرائح</h3><span class="micro">انقر للانتقال · Esc للإغلاق</span></div>
+  <div class="grid"></div>
+</div>
+
+<div id="help">
+  <div class="box">
+    <h3>تحكم العرض</h3>
+    <div class="kv">
+      <kbd>← / Space / Enter</kbd><span>التالي (خطوة داخل الشريحة ثم الشريحة التالية)</span>
+      <kbd>→ / Backspace</kbd><span>السابق</span>
+      <kbd>Home / End</kbd><span>أول / آخر شريحة</span>
+      <kbd>O</kbd><span>فهرس الشرائح (نظرة شاملة)</span>
+      <kbd>N</kbd><span>ملاحظات المقدّم</span>
+      <kbd>F</kbd><span>ملء الشاشة</span>
+      <kbd>H</kbd><span>هذه اللوحة</span>
+    </div>
+  </div>
+</div>
+
+<script id="sections-data" type="application/json">
+[
+ {"n":"01","label":"السياق","from":0,"to":2},
+ {"n":"02","label":"التحليل","from":3,"to":7},
+ {"n":"03","label":"التصميم","from":8,"to":12},
+ {"n":"04","label":"قاعدة البيانات","from":13,"to":14},
+ {"n":"05","label":"الإنجاز","from":15,"to":18},
+ {"n":"06","label":"الخاتمة","from":19,"to":19}
+]
+</script>
+<script>
+/* build section chips from JSON */
+(function(){
+  const S=JSON.parse(document.getElementById('sections-data').textContent);
+  const nav=document.getElementById('sects');
+  S.forEach((s,i)=>{
+    const b=document.createElement('button');
+    b.innerHTML='<span class="n">'+s.n+'</span><span>'+s.label+'</span>';
+    nav.appendChild(b);
+  });
+})();
+</script>
+<script src="js/notes.js"></script>
+<script src="js/engine.js"></script>
+</body>
+</html>
