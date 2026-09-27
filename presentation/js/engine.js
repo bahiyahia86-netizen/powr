@@ -21,9 +21,13 @@
   const G = window.gsap || null;
   const SPLIT = !!(G && window.SplitText);
   const DRAW = !!(G && window.DrawSVGPlugin);
+  const FLIP = !!(G && window.Flip);
+  const SCRAM = !!(G && window.ScrambleTextPlugin);
+  const OBS = !!(G && window.Observer);
+  const RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   if (G) {
-    if (SPLIT) G.registerPlugin(window.SplitText);
-    if (DRAW) G.registerPlugin(window.DrawSVGPlugin);
+    [window.SplitText, window.DrawSVGPlugin, window.Flip, window.ScrambleTextPlugin, window.Observer]
+      .forEach(p => { if (p) G.registerPlugin(p); });
     document.documentElement.classList.add('gsap');
     G.defaults({ overwrite: 'auto' });
   }
@@ -103,7 +107,17 @@
     } catch (e) { el._stArr = null; }
     return el._stArr;
   }
+  function scramble(el, d) {
+    if (!SCRAM || RM) return;
+    const t = el._scTxt || (el._scTxt = el.textContent);
+    el.textContent = '';
+    G.to(el, { duration: .9, delay: d, ease: 'power2.out', scrambleText: { text: t, chars: '!<>-_\\/[]{}=+*^?#01', revealDelay: .12 } });
+  }
   function reveal(el, on, delay) {
+    if (on) {
+      const scs = el.matches('[data-scramble]') ? [el] : Array.from(el.querySelectorAll('[data-scramble]'));
+      scs.forEach(s => scramble(s, delay + .25));
+    }
     if (el.hasAttribute('data-split') && SPLIT && splitArr(el)) {
       if (on) {
         G.set(el, { autoAlpha: 1 });
@@ -210,6 +224,22 @@
           { transform: 'none', opacity: 1 }
         ], { duration: 820, easing: 'cubic-bezier(.22,1,.36,1)', delay: 120, fill: 'backwards' });
         return;
+      }
+      if (FLIP && !RM) {
+        /* true FLIP morph (greensock/Flip): capture source bounds, match by data-flip-id */
+        try {
+          const id = el.dataset.morph;
+          src.setAttribute('data-flip-id', id);
+          el.setAttribute('data-flip-id', id);
+          const state = window.Flip.getState(src);
+          src.removeAttribute('data-flip-id');
+          window.Flip.from(state, {
+            duration: .95, ease: EIO, scale: true, delay: .1,
+            onComplete: () => src.setAttribute('data-flip-id', id)
+          });
+          G.to(src, { autoAlpha: 0, scale: .97, duration: .4, ease: 'power2.in' });
+          return;
+        } catch (e) { /* fall through to tween morph */ }
       }
       const brA = getComputedStyle(src).borderRadius, brB = getComputedStyle(el).borderRadius;
       G.fromTo(el,
@@ -348,13 +378,52 @@
   /* ---------- micro-interactions (hover lift) ---------- */
   if (G) {
     stage.addEventListener('pointerover', e => {
-      const c = e.target.closest('.card, .tech, .res-row, .mrel, .chip');
+      const c = e.target.closest('.card, .res-row, .mrel, .chip');
       if (c && !c.contains(e.relatedTarget)) G.to(c, { y: -6, duration: .4, ease: 'power3.out' });
     });
     stage.addEventListener('pointerout', e => {
-      const c = e.target.closest('.card, .tech, .res-row, .mrel, .chip');
+      const c = e.target.closest('.card, .res-row, .mrel, .chip');
       if (c && !c.contains(e.relatedTarget)) G.to(c, { y: 0, duration: .5, ease: 'power3.out' });
     });
+    /* magnetic nav buttons */
+    if (!RM) {
+      document.querySelectorAll('.navbtns button').forEach(b => {
+        const qx = G.quickTo(b, 'x', { duration: .5, ease: 'power3.out' });
+        const qy = G.quickTo(b, 'y', { duration: .5, ease: 'power3.out' });
+        b.addEventListener('pointermove', e => {
+          const r = b.getBoundingClientRect();
+          qx((e.clientX - r.left - r.width / 2) * .28);
+          qy((e.clientY - r.top - r.height / 2) * .4);
+        });
+        b.addEventListener('pointerleave', () => { qx(0); qy(0); });
+      });
+    }
+  }
+
+  /* ---------- wheel navigation (greensock/Observer) ---------- */
+  if (OBS) {
+    let lock = 0;
+    window.Observer.create({
+      type: 'wheel',
+      tolerance: 70,
+      preventDefault: true,
+      onDown: () => { const n = Date.now(); if (begun && n - lock > 700 && !overlayOpen()) { lock = n; next(); } },
+      onUp: () => { const n = Date.now(); if (begun && n - lock > 700 && !overlayOpen()) { lock = n; prev(); } }
+    });
+  }
+  function overlayOpen() {
+    return document.getElementById('overview').classList.contains('open') ||
+      document.getElementById('help').classList.contains('open');
+  }
+
+  /* ---------- 3D tilt on showcases (micku7zu/vanilla-tilt.js, MIT) ---------- */
+  function initTilt() {
+    if (!window.VanillaTilt || RM) return;
+    try {
+      window.VanillaTilt.init(Array.from(document.querySelectorAll('.show .win, .tech')), {
+        max: 5, speed: 800, glare: true, 'max-glare': .13, scale: 1.012, perspective: 1100, gyroscope: false
+      });
+    } catch (e) {}
   }
 
   function killHint() { if (hint) hint.classList.add('gone'); }
@@ -428,11 +497,12 @@
     meta.forEach((m, i) => { G.set(m.el, { autoAlpha: i === start ? 1 : 0 }); m.el.classList.toggle('active', i === start); });
     G.set(meta[start].inner, { x: 0, scale: 1, opacity: 1 });
     /* ambient life: hero motif float + gate entrance */
-    G.to('.hero .motif', { y: 14, duration: 4.5, yoyo: true, repeat: -1, ease: 'sine.inOut' });
+    if (!RM) G.to('.hero .motif', { y: 14, duration: 4.5, yoyo: true, repeat: -1, ease: 'sine.inOut' });
     G.from('#gate .gbox > *', { y: 44, autoAlpha: 0, stagger: .1, duration: .95, ease: EO, delay: .15 });
   } else {
     meta.forEach((m, i) => m.el.classList.toggle('active', i === start));
   }
+  initTilt();
   apply(meta[start], -1);           /* hold entrance until the start gate closes */
   hud(start);
 })();

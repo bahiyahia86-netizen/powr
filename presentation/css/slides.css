@@ -283,3 +283,9 @@
 .thanks h3{font-family:var(--f-display);font-size:32px;font-weight:700}
 .thanks p{font-size:17px;color:var(--ink-2);font-weight:300;margin-top:6px}
 .thanks .q{font-family:var(--f-display);font-size:60px;color:var(--brass);font-weight:800;line-height:1}
+
+/* ---------------- 3D tilt parents (vanilla-tilt) ---------------- */
+.show .cam-box{perspective:1200px}
+.tech-cards{perspective:1200px}
+.show .win,.tech{transform-style:preserve-3d;will-change:transform}
+.show .win .bar,.show .win img{transform:translateZ(0)}
