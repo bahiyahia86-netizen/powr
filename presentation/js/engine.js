@@ -162,8 +162,44 @@
   }
 
   /* ---------- keyboard ---------- */
+  const gate = document.getElementById('gate');
+  let begun = false;
+  function requestFS() {
+    try {
+      const el = document.documentElement;
+      if (!document.fullscreenElement && el.requestFullscreen) {
+        const p = el.requestFullscreen({ navigationUI: 'hide' });
+        if (p && p.catch) p.catch(() => {});
+      }
+    } catch (e) {}
+  }
+  function toggleFS() {
+    try {
+      if (document.fullscreenElement) { const p = document.exitFullscreen(); if (p && p.catch) p.catch(() => {}); }
+      else requestFS();
+    } catch (e) {}
+  }
+  function begin() {
+    if (begun) return;
+    begun = true;
+    gate.classList.add('gone');
+    requestFS();
+    setTimeout(() => { apply(meta[cur], 0); hud(cur); }, 260);
+  }
+  document.getElementById('gate-btn').addEventListener('click', begin);
+  document.getElementById('fs-btn').addEventListener('click', toggleFS);
+  stage.addEventListener('dblclick', e => {
+    if (e.target.closest('button, .navbtns, .sects, #notes, #overview, #help, #gate')) return;
+    toggleFS();
+  });
+
   addEventListener('keydown', e => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (!begun) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowLeft') { e.preventDefault(); begin(); }
+      else if (e.key === 'f' || e.key === 'F') toggleFS();
+      return;
+    }
     const ov = document.getElementById('overview'), hp = document.getElementById('help');
     switch (e.key) {
       case 'ArrowLeft': case ' ': case 'PageDown': case 'Enter': e.preventDefault(); closeOverlays(); next(); break;
@@ -179,10 +215,7 @@
         openOverview(); break;
       case 'n': case 'N': document.getElementById('notes').classList.toggle('open'); break;
       case 'h': case 'H': case '?': hp.classList.toggle('open'); break;
-      case 'f': case 'F':
-        if (document.fullscreenElement) document.exitFullscreen();
-        else document.documentElement.requestFullscreen();
-        break;
+      case 'f': case 'F': toggleFS(); break;
     }
   });
   function closeOverlays() {
@@ -274,7 +307,7 @@
   if (h) start = Math.max(0, Math.min(N - 1, +h[1] - 1));
   meta.forEach((m, i) => { if (i !== start) m.el.classList.remove('active'); });
   cur = start;
-  apply(meta[start], 0);
+  apply(meta[start], -1);           /* hold entrance until the start gate closes */
   meta[start].el.classList.add('active');
   hud(start);
 })();

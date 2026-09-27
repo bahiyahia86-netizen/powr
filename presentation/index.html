@@ -798,6 +798,7 @@
     <button id="nx" title="التالي (← أو مسافة)" aria-label="التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
     <button id="ov-btn" title="فهرس الشرائح (O)" aria-label="فهرس الشرائح"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button>
     <button id="notes-btn" title="ملاحظات المقدّم (N)" aria-label="ملاحظات المقدّم"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></button>
+    <button id="fs-btn" title="ملء الشاشة (F أو نقر مزدوج)" aria-label="ملء الشاشة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg></button>
   </div>
   <div class="hint"><kbd>←</kbd><kbd>Space</kbd> التالي · <kbd>→</kbd> السابق · <kbd>O</kbd> فهرس · <kbd>N</kbd> ملاحظات المقدّم · <kbd>F</kbd> ملء الشاشة · <kbd>H</kbd> مساعدة</div>
 </div>
@@ -818,9 +819,22 @@
       <kbd>Home / End</kbd><span>أول / آخر شريحة</span>
       <kbd>O</kbd><span>فهرس الشرائح (نظرة شاملة)</span>
       <kbd>N</kbd><span>ملاحظات المقدّم</span>
-      <kbd>F</kbd><span>ملء الشاشة</span>
+      <kbd>F / نقر مزدوج</kbd><span>تبديل ملء الشاشة</span>
       <kbd>H</kbd><span>هذه اللوحة</span>
     </div>
+  </div>
+</div>
+
+<div id="gate">
+  <div class="gbox">
+    <span class="gmark"></span>
+    <h1>نظام معلوماتي لتسيير مكتبة كلية العلوم الاجتماعية والإنسانية</h1>
+    <p class="gsub">عرض ويب تفاعلي لمناقشة مذكرة التخرج — 20 شاشة، كاميرا داخل المخططات، وخطوات كشف تصاعدي. سيُفتح العرض بملء الشاشة تلقائيًا.</p>
+    <button class="gbtn" id="gate-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+      بدء العرض بملء الشاشة
+    </button>
+    <span class="gkeys"><kbd>Enter</kbd><kbd>Space</kbd> للبدء · <kbd>F</kbd> تبديل ملء الشاشة لاحقًا · <kbd>H</kbd> كل الاختصارات</span>
   </div>
 </div>
 
