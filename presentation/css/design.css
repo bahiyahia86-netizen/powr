@@ -493,3 +493,13 @@ h3.sub{font-family:var(--f-display);font-weight:600;font-size:26px;line-height:1
 @media (prefers-reduced-motion:reduce){
   *{transition-duration:.01ms !important;animation-duration:.01ms !important}
 }
+
+/* ============ GSAP owns motion: silence the CSS motion system ========= */
+html.gsap .slide,
+html.gsap .slide .inner,
+html.gsap [data-step],
+html.gsap .cam,
+html.gsap .progress i{transition:none !important}
+html.gsap .draw path,
+html.gsap .draw line,
+html.gsap .draw polyline{transition:none;stroke-dasharray:none;stroke-dashoffset:0}

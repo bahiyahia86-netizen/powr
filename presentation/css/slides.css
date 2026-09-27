@@ -51,7 +51,7 @@
 .hero .batch .line{width:64px;height:1px;background:var(--brass)}
 .hero .batch span{font-family:var(--f-mono);font-size:15px;letter-spacing:.16em;color:var(--brass-soft)}
 /* shelf-line motif on hero right */
-.hero .motif{position:absolute;inset-inline-end:96px;top:50%;transform:translateY(-50%);z-index:2;opacity:.9}
+.hero .motif{position:absolute;inset-inline-end:96px;top:calc(50% - 210px);z-index:2;opacity:.9}
 
 /* ---------------- generic head + body grids ---------------- */
 .body{flex:1;min-height:0;display:flex;flex-direction:column}
