@@ -100,3 +100,24 @@ presentation/
 ├── fonts/            # 25 ملف woff2 (Alexandria / Plex Sans Arabic / Plex Mono)
 └── assets/           # لقطتا البرنامج + صورة المكتبة
 ```
+
+## النشر (مباشر الآن)
+
+العرض منشور عبر **jsDelivr CDN** من مستودع GitHub العام — بلا حساب وبلا تفعيل:
+
+- **الرابط الأساسي** (يتبع آخر إصدار Release):
+  https://cdn.jsdelivr.net/gh/bahiyahia86-netizen/powr/presentation/index.html
+- رابط مثبّت بالإصدار `v1.0.0`:
+  https://cdn.jsdelivr.net/gh/bahiyahia86-netizen/powr@v1.0.0/presentation/index.html
+- رابط مثبّت بالالتزام `d567d4b` (لا يتغير أبدًا — الأنسب ليوم المناقشة):
+  https://cdn.jsdelivr.net/gh/bahiyahia86-netizen/powr@d567d4bb83113d4868e761f4b5c70ec8e2ed66a6/presentation/index.html
+
+تحديث النسخة المنشورة: ادفع التغييرات ثم أنشئ Release جديدًا
+(`gh release create v1.0.1 --target <branch>`) فيتبعه الرابط الأساسي تلقائيًا.
+
+### GitHub Pages (اختياري — يحتاج خطوة واحدة من مالك المستودع)
+
+مسار النشر `.github/workflows/deploy-pages.yml` جاهز، لكن إنشاء موقع Pages
+لا يتم إلا يدويًا: **Settings → Pages → Source = GitHub Actions**.
+بعدها يعمل المسار تلقائيًا مع كل push ويصبح الرابط الرسمي:
+https://bahiyahia86-netizen.github.io/powr/
